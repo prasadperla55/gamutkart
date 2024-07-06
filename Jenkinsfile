@@ -32,7 +32,6 @@ pipeline {
         }
 	stage('Deployment') {
 	   steps {
-		   cd '/var/lib/jenkins/workspace/pipeline srm'
 		sh 'scp target/gamutkart.war root@172.31.38.25:/root/tomcat/webapps'
 	}
     }
